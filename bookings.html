@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="bookings-h1" >Bookings</h1>
+    <p class="bookings-p" >Select and book your preferred sport court or training session.</p>
+    
+    <!-- Sport options with images -->
+    <div class="sport-info">
+        <div class="sport-option">
+            <h2>Football</h2>
+            <img src="football-court.jpg" alt="Football Court">
+            <p>Book a slot on our premium football turf.</p>
+        </div>
+        <div class="sport-option">
+            <h2>Badminton</h2>
+            <img src="badminton-court.webp" alt="Badminton Court">
+            <p>Reserve a badminton court for a friendly match or training.</p>
+        </div>
+        <div class="sport-option">
+            <h2>Swimming</h2>
+            <img src="swimming-pool.jpg" alt="Swimming Pool">
+            <p>Book a swimming session in our clean, well-maintained pool.</p>
+        </div>
+    </div>
+
+    <!-- Booking form -->
+    <form>
+        <label for="sport">Choose a sport:</label>
+        <select id="sport" name="sport">
+            <option value="football">Football</option>
+            <option value="badminton">Badminton</option>
+            <option value="swimming">Swimming</option>
+        </select>
+        <br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <br><br>
+        <button type="submit">Book Now</button>
+    </form>
+</body>
+</html>
+

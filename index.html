@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="nav">
+        <img src="Logo.png" alt="">
+        <!-- Add this link in the <div id="nav"> section of index.html -->
+        <button onclick="window.location.href='user-dashboard.html'">Dashboard</button>
+        <!-- Add this inside <div id="nav"> in index.html -->
+        <input type="text" id="search-bar" placeholder="Search...">
+        <button id="menu-toggle">☰</button>
+    <nav id="mobile-menu">
+        <button onclick="window.location.href='index.html'">Home</button>
+    <button onclick="window.location.href='bookings.html'">Bookings</button>
+    <button onclick="window.location.href='training.html'">Training</button>
+    <button onclick="window.location.href='shop.html'">Shop</button>
+    <button onclick="window.location.href='contact.html'">Contact Us</button>
+    </nav>
+    
+    </header>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    <video autoplay loop muted src="Bg Video.mp4"></video>
+
+    <div id="main">
+        <div id="page1">
+            <h1>EAT. DRINK. PLAY.</h1>
+            <H2>WELCOME TO FAMILY TURF</H2>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, tempore. Porro, unde. Fugit veritatis quis quod non, nobis numquam animi.</P>
+            <div id="arrow">
+                <i class="ri-arrow-down-fill"></i>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="scroller">
+                <div id="scroller-in">
+                    <h4>Home</h4>
+                    <h4>Bookings</h4>
+                    <h4>Tournaments</h4>
+                    <h4>Training</h4>
+                    <h4>Shop</h4>
+                </div>
+                <div id="scroller-in">
+                    <h4>Home</h4>
+                    <h4>Bookings</h4>
+                    <h4>Training</h4>
+                    <h4>Shop</h4>
+                </div>
+            </div>
+            <div id="about-us">
+                <img src="about-us-1.jpg" alt="">
+                <div id="about-us-in">
+                    <h3>ABOUT US</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum porro aliquam possimus ipsum quasi debitis minus sunt consequatur! Laboriosam nam optio molestias consequuntur fugit.</P>
+                </div>
+                <img src="about-us-2.jpg" alt="">
+            </div>
+            <div id="cards-container">
+                <div class="card" id="card1">
+                    <div class="overlay">
+                        <h4>Premium Football Pitch</h4>
+                        <p class="para-card" >Premium football pitches provide players with optimal conditions for effective training and performance.</p>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <div class="overlay">
+                        <h4>Football Obstacle Course</h4>
+                        <p class="para-card" >Football obstacle courses make training exciting by challenging players with agility and skill-based exercises.</p>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <div class="overlay">
+                        <h4>Football Coaching Sessions</h4>
+                        <p class="para-card" >Football coaching sessions focus on developing skills like dribbling, passing, and game strategies for all levels.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="green-div">
+                <img src="green-dots.png" alt="">
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis iure itaque vitae sint esse delectus?</h4>
+                <img src="green-dots.png" alt="">
+            </div>
+        </div>
+        <div id="page3">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, unde ipsum autem recusandae et esse!</p>
+            <img id="colon1" src="quotation marks.png" alt="">
+            <img id="colon2" src="marks down.png" alt="">
+        </div>
+        <div id="page4">
+            <h1>what are you waiting for?</h1>
+            <div class="elem">
+                <h2>Bookings</h2>
+                <img src="bookings.jpg" alt="">
+            </div>
+            <div class="elem">
+                <h2>Training</h2>
+                <img src="training.jpg" alt="">
+            </div>
+            <div class="elem">
+                <h2>Memberships</h2>
+                <img src="membership.webp" alt="">
+            </div>
+        </div>
+        <div id="footer">
+              <img src="green-dots.png" alt="">
+              <div id="f1">
+                <img src="Logo.png" alt="">
+              </div>
+              <div id="f2">
+                <h3>Home</h3>
+                <h3>Bookings</h3>
+                <h3>Tournaments</h3>
+              </div>
+              <div id="f3">
+                 <h3>Training</h3>
+                 <h3>Shop</h3>
+                 <h3>Contact us</h3> 
+            </div>
+            <div id="f4">
+                <h4>Address Lorem ipsum <br> dolor sit amet <br> consectetur adipisicing elit. <br> Atque, consequatur.</h4>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js" defer></script>
+    
+</body>
+</html>
